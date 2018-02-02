@@ -6,8 +6,6 @@
 //Day 3 : Tuesday Night
 //Etc.
 
-
-
 //Declare Global Variables
 var idLocation = $('#location');
 var coordsLat, coordsLong;
