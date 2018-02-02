@@ -6,6 +6,8 @@
 //Day 3 : Tuesday Night
 //Etc.
 
+
+
 //Declare Global Variables
 var idLocation = $('#location');
 var coordsLat, coordsLong;
@@ -15,6 +17,7 @@ var month = currentDate.getMonth();
 var day = currentDate.getDate();
 var year = currentDate.getFullYear();
 var idDate = $('#date');
+var degree = "F";
 
 //Run Functions
 $(document).ready(function() {
@@ -32,6 +35,18 @@ $(document).ready(function() {
     idLocation.HTML = "Geolocation is not supported by this browser.";
   }
 });
+
+//Switch between Farenheit or Celcius
+function changeDegree() {
+  switch(degree){
+    case 'F':
+      degree = 'C';
+      break;
+    case 'C':
+      degree = 'F';
+      break;
+  }
+}
 
 //Get Farenheit data from fetched API
 function getFarData(farData) {
