@@ -1,160 +1,146 @@
 <!DOCTYPE html>
-<html lang=en>
-<meta charset=utf-8>
-<meta content="width=device-width,initial-scale=1,shrink-to-fit=no" name=viewport>
-<meta content="" name=description>
-<meta content="" name=author>
-<title>Local Weather App | Avi Tapp</title>
-<link href=https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css rel=stylesheet crossorigin=anonymous integrity=sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy>
-<link href=https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css rel=stylesheet crossorigin=anonymous integrity=sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN>
-<link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900|Lato|Muli|Sedgwick+Ave+Display" rel=stylesheet>
-<link href=css/localWeatherApp.css rel=stylesheet>
-<style>
-  a:link {
-    text-decoration: none
-  }
-  
-  html {
-    background: url(https://images.unsplash.com/photo-1501536563292-5d56009a5942?auto=format&fit=crop&w=1660&q=80) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover
-  }
-  
-  .img-thumbnail {
-    box-shadow: 0 0 12px 6px #0008ff
-  }
-  
-  .card {
-    background: 0 0
-  }
-  
-  .card-body h2,
-  .card-header h5,
-  .sedgwick {
-    font-family: 'Sedgwick Ave Display', cursive
-  }
-  
-  .bg-gone {
-    background-color: transparent
-  }
-</style>
-
-<body class=bg-gone id=page-top>
-  <header class=masthead>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width,initial-scale=1,shrink-to-fit=no" name="viewport">
+  <meta content="" name="description">
+  <meta content="" name="author">
+  <title>Local Weather App | Avi Tapp</title>
+  <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" rel="stylesheet">
+  <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900|Lato|Muli|Sedgwick+Ave+Display" rel="stylesheet">
+  <link href="css/localWeatherApp.css" rel="stylesheet">
+  <style>
+    a:link {text-decoration: none;}
+    html {background: url(https://images.unsplash.com/photo-1501536563292-5d56009a5942?auto=format&fit=crop&w=1660&q=80) no-repeat center center fixed;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover}
+    .img-thumbnail {box-shadow: 0 0 12px 6px #0008ff}
+    .card {background: 0 0}
+    .card-body h2, .card-header h5, .sedgwick {font-family: 'Sedgwick Ave Display', cursive}
+    .bg-gone {background-color: transparent}
+  </style>
+</head>
+<body class="bg-gone" id="page-top">
+  <header class="masthead">
     <div class="container-fluid h-100">
       <div class="row h-100">
-        <div class=col-lg-5>
+        <div class="col-lg-5">
           <div class="card border-0">
             <div class="card-header bg-gone border-0">
-              <div class=row>
-                <div class=col-lg-3>&nbsp;</div>
-                <div class=col-lg-6><img class="card-img-top img-thumbnail rounded" src=img\atc-logo.png></div>
-                <div class=col-lg-3>&nbsp;</div>
+              <div class="row">
+                <div class="col-lg-3"></div>
+                <div class="col-lg-6"><img class="card-img-top img-thumbnail rounded" src="img/atc-logo.png"></div>
+                <div class="col-lg-3"></div>
               </div>
             </div>
-            <div class=card-body>
-              <h2 class="my-auto text-center text-uppercase">Local Weather<br>~App~</h2></div>
+            <div class="card-body">
+              <h2 class="my-auto text-center text-uppercase">
+                Local Weather<br>
+                ~App~<br>
+              </h2>
+            </div>
             <div class="border-0 bg-gone card-footer">
-              <h2 class=sedgwick>Contact Me!</h2>
-              <div class=row>
+              <h2 class="sedgwick">Contact Me!</h2>
+              <div class="row">
                 <div class="col text-black">
-                  <a href=http:www.andrewtapp.com>
-                    <button class="btn btn-flex btn-white"><i class="fa fa-home"></i></button>
-                  </a>
-                  <a href=mailto:Avi@andrewtapp.com>
-                    <button class="btn btn-flex btn-white"><i class="fa fa-envelope"></i></button>
-                  </a>
-                  <a href=pdfs\andrewTappResume_Simple_.pdf>
-                    <button class="btn btn-flex btn-white"><i class="fa fa-file-pdf-o"></i></button>
-                  </a>
-                  <hr class=border-0>
-                  <a href=https://twitter.com/Avi_Tapp>
-                    <button class="btn btn-flex btn-white"><i class="fa fa-twitter"></i></button>
-                  </a>
-                  <a href=https://www.facebook.com/Avi.M.Tapp>
-                    <button class="btn btn-flex btn-white"><i class="fa fa-facebook"></i></button>
-                  </a>
-                  <a href=https://gist.github.com/AviTapp>
-                    <button class="btn btn-flex btn-white"><i class="fa fa-github"></i></button>
-                  </a>
-                  <a href=img\snapcode.jpg>
-                    <button class="btn btn-flex btn-white"><i class="fa fa-snapchat"></i></button>
-                  </a>
+                  <a href="http:www.andrewtapp.com"><button class="btn btn-flex btn-white"><i class="fa fa-home"></i></button></a> <a href="mailto:Avi@andrewtapp.com"><button class="btn btn-flex btn-white"><i class="fa fa-envelope"></i></button></a> <a href="pdfs/andrewTappResume_Simple_.pdf"><button class="btn btn-flex btn-white"><i class="fa fa-file-pdf-o"></i></button></a>
+                  <hr class="border-0">
+                  <a href="https://twitter.com/Avi_Tapp"><button class="btn btn-flex btn-white"><i class="fa fa-twitter"></i></button></a> <a href="https://www.facebook.com/Avi.M.Tapp"><button class="btn btn-flex btn-white"><i class="fa fa-facebook"></i></button></a> <a href="https://gist.github.com/AviTapp"><button class="btn btn-flex btn-white"><i class="fa fa-github"></i></button></a> <a href="img/snapcode.jpg"><button class="btn btn-flex btn-white"><i class="fa fa-snapchat"></i></button></a> 
                 </div>
-                <div class=col>
-                  <a href=https://www.atappcreation.com>
-                    <button class="btn btn-block btn-success">&copy; 2018 A Tapp Creation</button>
-                  </a>
+                <div class="col">
+                  <a href="https://www.atappcreation.com"><button class="btn btn-block btn-success">© 2018 A Tapp Creation</button></a>
                 </div>
               </div>
             </div>
           </div>
           <div class="text-center header-content mx-auto"></div>
         </div>
-        <div class="my-auto col-lg-1">&nbsp;</div>
+        <div class="my-auto col-lg-1"></div>
         <div class="my-auto col-lg-5">
           <div class="text-center container-fluid">
-            <div class=card-group>
-              <div class=card>
+            <div class="card-group">
+              <div class="card">
                 <div class="card-header bg-dark">
-                  <h5>Date & Location</h5></div>
-                <div class=card-body>
-                  <p id=day0Name class=my-0>Shabbos
-                    <p id=date class=my-0>Yud Aleph Nissan
-                      <p id=location>770 Eastern Pkwy, Brooklyn, NY</div>
+                  <h5>Date & Location</h5>
+                </div>
+                <div class="card-body">
+                  <p class="my-0" id="day0Name">Today</p>
+                  <p class="my-0" id="date">This Date</p>
+                  <p id="location">This Place</p>
+                </div>
               </div>
               <div class="card border-bottom-0 border-top-0">
-                <div class=card-body id=weatherIcon>&nbsp;</div>
+                <div class="card-body" id="weatherIcon"><img alt="mostlycloudy" class="mx-auto img-fluid" src="img/weather/mostlycloudy.png"></div>
               </div>
-              <div class=card>
+              <div class="card">
                 <div class="card-header bg-dark">
-                  <h5>Current Conditions</h5></div>
-                <div class=card-body>
-                  <p id=weatherDesc class=my-0>Partly Cloudy
-                    <p id=day0TempHi class=my-0>Hi: 100°F
-                      <p id=day0TempLo class=my-0>Lo: 00°F
-                        <p id=day0TempNow>Now: 50°F
-                          <p>
-                            <button class="btn btn-block bg-dark btn-secondary sedgwick text-white" onclick=changeFC()>°F<i class="fa fa-arrows-h"></i>°C</button>
+                  <h5>Current Conditions</h5>
+                </div>
+                <div class="card-body">
+                  <p class="my-0" id="weatherDesc">Hurricane</p>
+                  <p class="my-0" id="day0TempHi">Hi: 100°F</p>
+                  <p class="my-0" id="day0TempLo">Lo: 000°F</p>
+                  <p id="day0TempNow">Now: 50°F</p>
+                  <p><button class="btn btn-block bg-dark btn-secondary sedgwick text-white" onclick="changeDegree()">°F <i class="fa fa-arrows-h"></i> °C</button></p>
                 </div>
               </div>
             </div>
             <div class="card-columns my-2">
-              <div class=card>
-                <div class="card-header bg-primary" id=day2Name>&nbsp;</div>
-                <div class="card-body bg-secondary" id=day2Text>&nbsp;</div>
+              <div class="card">
+                <div class="card-header bg-primary">
+                  <h5 id="day2Name">&nbsp;</h5>
+                  <span id="day2Icon">&nbsp;</span>
+                </div>
+                <div class="card-body bg-secondary" id="day2Text">&nbsp;</div>
               </div>
-              <div class=card>
-                <div class="card-header bg-primary" id=day3Name>&nbsp;</div>
-                <div class="card-body bg-secondary" id=day3Text>&nbsp;</div>
+              <div class="card">
+                <div class="card-header bg-primary">
+                  <h5 id="day3Name">&nbsp;</h5>
+                  <span id="day3Icon">&nbsp;</span>
+                </div>
+                <div class="card-body bg-secondary" id="day3Text">&nbsp;</div>
               </div>
-              <div class=card>
-                <div class="card-header bg-primary" id=day4Name>&nbsp;</div>
-                <div class="card-body bg-secondary" id=day4Text>&nbsp;</div>
+              <div class="card">
+                <div class="card-header bg-primary">
+                  <h5 id="day4Name">&nbsp;</h5>
+                  <span id="day4Icon">&nbsp;</span>
+                </div>
+                <div class="card-body bg-secondary" id="day4Text">&nbsp;</div>
               </div>
-              <div class=card>
-                <div class="card-header bg-primary" id=day5Name>&nbsp;</div>
-                <div class="card-body bg-secondary" id=day5Text>&nbsp;</div>
+              <div class="card">
+                <div class="card-header bg-primary">
+                  <h5 id="day5Name">&nbsp;</h5>
+                  <span id="day5Icon">&nbsp;</span>
+                </div>
+                <div class="card-body bg-secondary" id="day5Text">&nbsp;</div>
               </div>
-              <div class=card>
-                <div class="card-header bg-primary" id=day6Name>&nbsp;</div>
-                <div class="card-body bg-secondary" id=day6Text>&nbsp;</div>
+              <div class="card">
+                <div class="card-header bg-primary">
+                  <h5 id="day6Name">&nbsp;</h5>
+                  <span id="day6Icon">&nbsp;</span>
+                </div>
+                <div class="card-body bg-secondary" id="day6Text">&nbsp;</div>
               </div>
-              <div class=card>
-                <div class="card-header bg-primary" id=day7Name>&nbsp;</div>
-                <div class="card-body bg-secondary" id=day7Text>&nbsp;</div>
+              <div class="card">
+                <div class="card-header bg-primary">
+                  <h5 id="day7Name">&nbsp;</h5>
+                  <span id="day7Icon">&nbsp;</span>
+                </div>
+                <div class="card-body bg-secondary" id="day7Text">&nbsp;</div>
               </div>
             </div>
           </div>
         </div>
-        <div class="my-auto col-lg-1">&nbsp;</div>
+        <div class="my-auto col-lg-1"></div>
       </div>
     </div>
   </header>
-  <script src=https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js></script>
-  <script src=https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.bundle.min.js crossorigin=anonymous integrity=sha384-VspmFJ2uqRrKr3en+IG0cIq1Cl/v/PHneDw6SQZYgrcr8ZZmZoQ3zhuGfMnSR/F2></script>
-  <script src=https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js></script>
-  <script src=js/localWeatherApp.js></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+  </script> 
+  <script crossorigin="anonymous" integrity="sha384-VspmFJ2uqRrKr3en+IG0cIq1Cl/v/PHneDw6SQZYgrcr8ZZmZoQ3zhuGfMnSR/F2" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.bundle.min.js">
+  </script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js">
+  </script> 
+  <script src="js/localWeatherApp.js">
+  </script>
 </body>
+</html>
